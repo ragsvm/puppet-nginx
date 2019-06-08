@@ -22,7 +22,7 @@ class params::nginx {
 
   $vhost_dir           = $facts['os']['family'] ? {
     'Debian'  => "${config_dir}/sites-available",
-    default   => "${config_confd}",
+    default   => ${config_confd},
   }
 
   $service_name        = 'nginx'
