@@ -8,7 +8,7 @@ class nginx::params {
   $config_group        = 'root'
   $config_confd        = "${config_dir}/conf.d"
   $config_log_dir      = '/var/log/nginx'
-  $config_pid_file     = '/rum/nginx.pid'
+  $config_pid_file     = '/run/nginx.pid'
 
   $config_vdir_enable  = $facts['os']['family'] ? {
     'Debian'  => "${config_dir}",
