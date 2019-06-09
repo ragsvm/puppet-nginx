@@ -24,14 +24,14 @@ class nginx::config (
 
    }
 
-   file {"$logdir":
+   file { $logdir:
 
       ensure        => directory,
       recurse       => true,
 
     }
 
-    file {"$docroot":
+    file { $docroot:
 
        ensure       => directory,
        recurse      => true,
