@@ -18,7 +18,6 @@ class nginx::config (
       path          => "${config_dir}/nginx.conf",
       mode          => $mode,
       owner         => $owner,
-      user          => $user,
       group         => $group,
       content       => template("${module_name}/conf.d/nginx.conf.erb")
 
