@@ -24,7 +24,7 @@ class nginx::config (
 
    }
 
-   file { $logdir:
+   file { $log_dir:
 
       ensure        => directory,
       recurse       => true,
